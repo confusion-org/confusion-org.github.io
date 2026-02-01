@@ -1,0 +1,179 @@
+/* standard.css - standard stylesheet for Matthew's pages  */
+
+/* Import stylesheet for printing (modifies navigation bar and footer).  Will
+ * be ignored by browsers that can't do CSS2.
+ */
+@import url("/matthew/styles/print.css") print;
+
+/* Top-level defaults:
+ */
+BODY {
+    background-color: #fff;
+    color: #000;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 12px;
+}
+#main {
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+#footer {
+    margin-top: 0px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 0px;
+}
+
+/* Headings:
+ */
+H1, H2, H3, H4, H5, H6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #006;
+}
+H1 { font-size: 150%; }
+H2 { font-size: 120%; padding-top: 8px; }
+H3 { font-size: 110%; }
+H1 { margin-top: 0 }
+
+/* Anchors (remember the order is important here!):
+ */
+A         { text-decoration: underline; }
+A:link    { color: #900; background-color: #fff; }
+A:visited { color: #600; background-color: #fff; }
+A:hover   { text-decoration: underline; } 
+A:active  { text-decoration: underline; 
+            color: #f00; background-color: #fff; }
+.navigation A         { text-decoration: none; }
+.navigation A:link    { color: #fff; background-color: #000; }
+.navigation A:visited { color: #fff; background-color: #000; }
+.navigation A:hover   { text-decoration: underline; } 
+.navigation A:active  { text-decoration: underline; 
+                        color: #ffc; background-color: #000; }
+.footer A         { text-decoration: none; }
+.footer A:link    { color: #009; background-color: #fff; }
+.footer A:visited { color: #009; background-color: #fff; }
+.footer A:hover   { text-decoration: underline; } 
+.footer A:active  { text-decoration: underline; 
+                    color: #00f; background-color: #fff; }
+
+/* Generic formatting:
+ */
+.centre  { text-align: center;  }
+.justify { text-align: justify; }
+
+/* Generic colours:
+ */
+.alert { color: #c00; background-color: #fff; }
+.grey  { color: #999; background-color: #fff; }
+
+/* Navigation bar in header (note class="navigation" is used on all parts of
+ * the table to work around problems in NN4):
+ */
+.navigation {
+    color: #fff;
+    background-color: #000;
+}
+#crumbs {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 80%;
+}
+
+/* Main:
+ */
+#main {
+    font-family: Georgia, Times New Roman, Times, serif;
+    line-height: 125%;
+}
+/* work around either a Safari oddity or me doing something bogus */
+#main P {
+    font-family: Georgia, Times New Roman, Times, serif;
+    line-height: 125%;
+}
+
+/* Footer:
+ */
+#subpages, #siblingpages, #footnav, #footdate {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 80%;
+}
+
+/* Specials for sitemap page:
+ */
+UL.sitemap, LI.sitemap {
+    list-style-type: disc;
+}
+
+/* Specials for weblog pages:
+ */
+#blogmain {
+    margin-top: 12pt;
+    margin-left: 72pt;
+    margin-right: 72pt;
+    margin-bottom: 12pt;
+}
+
+#nav2 { 
+        font-family: Verdana, Arial, Helvetica, sans-serif; 
+        font-size: x-small; 
+        font-weight: normal;
+        text-align: right;
+        color: #999; 
+}                       
+
+#nav2 A         { text-decoration: none; }
+#nav2 A:link    { color: #009; background-color: #fff; }
+#nav2 A:visited { color: #009; background-color: #fff; }
+#nav2 A:hover   { text-decoration: underline; } 
+#nav2 A:active  { text-decoration: underline; 
+                       color: #00f; background-color: #fff; }
+
+.blosxomDate { 
+        font-family: Palatino, Georgia, Times New Roman, Times, serif; 
+        font-size: medium; 
+        font-weight: bold;
+        text-align: right;
+        color: #333; 
+        border-bottom: 1px solid #999;
+        margin-bottom: 12px;
+}                       
+
+.story {
+        font-family: Georgia, Times New Roman, Times, serif; 
+        line-height: 125%;
+        padding-bottom: 8pt;
+}
+
+.storyhead { 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium; 
+        font-weight: bold;
+        text-align: left;
+        color: #333; 
+}                       
+
+.storyhead A { text-decoration: none; }
+
+.storybody { 
+        text-align: justify;
+}                       
+
+.storyfoot { 
+        font-family: Verdana, Arial, Helvetica, sans-serif; 
+        font-size: x-small; 
+        font-weight: normal;
+        text-align: right;
+        color: #999; 
+}                       
+
+.storyfoot A { text-decoration: none; }
+.storyfoot A:hover   { text-decoration: underline; } 
+.storyfoot A:active  { text-decoration: underline; }
+.storyfoot .pathlink { font-weight: bold; }
+
+#pagefoot { text-align: center }
+
